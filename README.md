@@ -42,6 +42,9 @@ python3 main.py
 ### How it looks:
 
  ![](/screenshots/box.png)
+ ![](/screenshots/img1.png)
+ ![](/screenshots/img2.png)
+
 
 ### Things you can add to improve the App:  
 
