@@ -69,14 +69,14 @@ class Detector:
           cv2.putText(image, displayText, (x, y-10), cv2.FONT_HERSHEY_PLAIN, 1, classColor, 2)
 
           print(classLabel)
-          if classLabel == 'cell phone':
+          if classLabel == 'bottle' or classLabel == 'wine glass' or classLabel == 'cup':
             check = True
             break
 
           stop = time.time()
           print(stop-start)
 
-          if (int)(stop-start) >= 10:
+          if (int)(stop-start) >= 300:
             os.system("shutdown /s /t 1")
             os.system("shutdown now -h")
 
