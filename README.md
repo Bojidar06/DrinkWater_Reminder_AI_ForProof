@@ -24,18 +24,18 @@ But don't, buddy. Drink water.
 ### How to Run it
 
 First clone the repository:  
-```
+```console
 git clone https://github.com/Bojidar06/DrinkWater_Reminder_AI_ForProof.git
 ```  
 
 Then open it and install the required python modules:
-```
+```console
 cd DrinkWater_Reminder_AI_ForProof/
 pip install -r requirements.txt
 ```
 
 Then run the Script:
-```
+```console
 python3 main.py  
 ```
 ### Things you can add to improve the App:  
