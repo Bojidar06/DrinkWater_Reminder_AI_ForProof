@@ -74,14 +74,15 @@ class Detector:
             break
 
           stop = time.time()
-          print(stop-start)
+  #        print(stop-start)
 
           if (int)(stop-start) >= 300:
             os.system("shutdown /s /t 1")
             os.system("shutdown now -h")
 
 
-      cv2.putText(image, "FPS: " + str(int(fps)), (20, 70), cv2.FONT_HERSHEY_PLAIN, 1.3, (0, 255, 0), 1)      
+      cv2.putText(image, "FPS: " + str(int(fps)), (10, 20), cv2.FONT_HERSHEY_PLAIN, 1.2, (0, 255, 0), 1)      
+      cv2.putText(image, "Remaining Time: " + str(int(300-(stop-start))), (10, 40), cv2.FONT_HERSHEY_PLAIN, 1.2, (0, 255, 0), 1)      
       cv2.imshow("Result", image)
 
       if check == True:
