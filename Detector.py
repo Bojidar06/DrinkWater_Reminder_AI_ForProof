@@ -38,10 +38,12 @@ class Detector:
 
     startTime = 0
     start = time.time() 
+    stop = time.time()
 
     while success:
       check = False
       currentTime = time.time()
+      stop = time.time()
       fps = 1 / (currentTime - startTime)
       startTime = currentTime
 
@@ -68,7 +70,7 @@ class Detector:
           cv2.rectangle(image, (x, y), (x+w, y+h), color = classColor, thickness = 1)
           cv2.putText(image, displayText, (x, y-10), cv2.FONT_HERSHEY_PLAIN, 1, classColor, 2)
 
-          print(classLabel)
+#          print(classLabel)
           if classLabel == 'bottle' or classLabel == 'wine glass' or classLabel == 'cup':
             check = True
             break
@@ -76,13 +78,13 @@ class Detector:
           stop = time.time()
   #        print(stop-start)
 
-          if (int)(stop-start) >= 300:
+          if (int)(stop-start) >= 360:
             os.system("shutdown /s /t 1")
             os.system("shutdown now -h")
 
 
       cv2.putText(image, "FPS: " + str(int(fps)), (10, 20), cv2.FONT_HERSHEY_PLAIN, 1.2, (0, 255, 0), 1)      
-      cv2.putText(image, "Remaining Time: " + str(int(300-(stop-start))), (10, 40), cv2.FONT_HERSHEY_PLAIN, 1.2, (0, 255, 0), 1)      
+      cv2.putText(image, "Remaining Time: " + str(int(360-(stop-start))), (10, 40), cv2.FONT_HERSHEY_PLAIN, 1.2, (0, 255, 0), 1)      
       cv2.imshow("Result", image)
 
       if check == True:
