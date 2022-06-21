@@ -29,12 +29,15 @@ git clone https://github.com/Bojidar06/DrinkWater_Reminder_AI_ForProof.git
 ```  
 
 Then open it and install the required python modules:
-> cd DrinkWater_Reminder_AI_ForProof/
-> pip install -r requirements.txt
+```
+cd DrinkWater_Reminder_AI_ForProof/
+pip install -r requirements.txt
+```
 
 Then run the Script:
-> python3 main.py  
-
+```
+python3 main.py  
+```
 ### Things you can add to improve the App:  
 
 **Feel free to make pull requests!**  
@@ -42,4 +45,3 @@ Then run the Script:
 1. You could find a way to always keep the windows on top of everything to pressure the user to do it.
 2. You can make it autorun. Right now you need to run it manualy every time you restart the pc.  
    You could find a way to make it autorun. I tried with *cronjob* but it didn't work, so I removed it.
-
