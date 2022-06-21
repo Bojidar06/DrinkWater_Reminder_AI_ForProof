@@ -38,6 +38,11 @@ Then run the Script:
 ```console
 python3 main.py  
 ```
+
+### How it looks:
+
+ ![](file:///home/bozhidar/Pictures/Screenshots/Screenshot%20from%202022-06-21%2012-28-30.png)
+
 ### Things you can add to improve the App:  
 
 **Feel free to make pull requests!**  
