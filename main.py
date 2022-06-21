@@ -11,4 +11,4 @@ while True:
   messagebox.showwarning("Important Reminder", "Get of that fucking chair and Go drink some water!")
 
   main()
-  time.sleep(600)
+  time.sleep(900)
