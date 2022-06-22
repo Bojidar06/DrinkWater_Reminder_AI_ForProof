@@ -53,3 +53,4 @@ python3 main.py
 1. You could find a way to always keep the windows on top of everything to pressure the user to do it.
 2. You can make it autorun. Right now you need to run it manualy every time you restart the pc.  
    You could find a way to make it autorun. I tried with *cronjob* but it didn't work, so I removed it.
+3. You can make the 6 minutes timer start from the show of the messagebox, not after you press ok on the messagebox.
