@@ -39,6 +39,7 @@ class Detector:
     startTime = 0
     start = time.time() 
     stop = time.time()
+    count_cups = 0
 
     while success:
       check = False
@@ -72,9 +73,11 @@ class Detector:
 
 #          print(classLabel)
           if classLabel == 'bottle' or classLabel == 'wine glass' or classLabel == 'cup':
-            check = True
-            break
-
+            count_cups = count_cups + 1
+            if count_cups >= 5:
+              check = True
+              break
+          
           stop = time.time()
   #        print(stop-start)
 
